@@ -3,6 +3,7 @@
 @import 'simplebar.css';
 @import 'product.css';
 @import 'products-grid.css';
+@import 'range-slider.css';
 
 .header {
 	position: relative;

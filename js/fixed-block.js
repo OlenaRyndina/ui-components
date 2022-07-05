@@ -7,8 +7,6 @@ const fixedBlock = document.querySelector('.filters-price'),
       filtersWidth = filters.offsetWidth, 
       smallOffset = gutter;
 
-      console.log(smallOffset);
-
       const fixedScrollBlock = () => {
       	let scrollDistance = window.scrollY;
 

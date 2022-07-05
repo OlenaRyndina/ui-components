@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>shop card</title>
     <link rel="stylesheet" href="libs/modal/modal.css">
+    <link rel="stylesheet" href="libs/nouislider.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -50,10 +51,30 @@
                 <div class="filters">
                     <div class="filters__item filters-price">
                         <h3 class="filters-price__title">Цена</h3>
-                        <div class="filters-price__slider"></div>
+                        <div class="filters-price__slider" id="range-slider"></div>
                         <div class="filters-price__inputs">
-                            <input type="text" class="filters-price__input">
-                            <input type="text" class="filters-price__input">
+                            <label class="filters-price__label">
+                                <span class="filters-price__text">от</span>
+                                <input 
+                                    type="number" 
+                                    class="filters-price__input"
+                                    min="100"
+                                    max="999999"
+                                    placeholder="100"
+                                    id="input-0">
+                                <span class="filters-price__text">грн</span>
+                            </label>
+                            <label class="filters-price__label">
+                                <span class="filters-price__text">до</span>
+                                <input 
+                                    type="number" 
+                                    class="filters-price__input"
+                                    min="100"
+                                    max="999999"
+                                    placeholder="999999"
+                                    id="input-1">
+                                <span class="filters-price__text">грн</span>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -488,9 +509,11 @@
     </div>
     
     <script src="js/simplebar.js"></script>
+    <script src="libs/nouislider.min.js"></script>
     <script src="libs/modal/modal.js"></script>
     <script src="js/product.js"></script>
     <script src="js/fixed-block.js"></script>
     <script src="js/cart.js"></script>
+    <script src="js/range-slider.js"></script>
 </body>
 </html>
