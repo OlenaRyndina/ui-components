@@ -1,0 +1,157 @@
+.tabs {
+    max-width: 1200px;
+    height: 413px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tabs__content {
+	margin: 0 auto;
+	display: none;
+}
+
+.tabs__content--active {
+	display: block;
+}
+
+.tabs__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.tabs__item:not(:last-child) {
+	margin-right: 10px;
+}
+
+.tabs__btn {
+	padding: 15px 62px;
+	border: none;
+	background-color: var(--color-accent);
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px 20px 0px 0px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.tabs__btn:hover {
+    background-color: #6078f1;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.tabs__btn--active {
+	background-color: #fff;
+	color: var(--color-accent);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.tabs__content {
+    width: 796px;
+    padding: 40px 60px;
+}
+
+.tabs-content__title {
+	margin: 0;
+	margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-dark);
+}
+
+.tabs-content__descr {
+	margin: 0;
+	margin-bottom: 59px;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-dark);
+}
+
+.tabs-content__list {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tabs-content__link {
+	width: 200px;
+	height: 120px;
+	padding: 14px;
+	display: inline-block;
+	background-color: #ebecf3;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.tabs-content__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #a2a6c0;
+}
+
+.tabs-content__yoga {
+	background-image: url(../../img/carpet.png);
+}
+
+.tabs-content__cardio {
+	background-image: url(../../img/cardio.png);
+}
+
+.tabs-content__power-training {
+	background-image: url(../../img/power-training.png);
+}
+
+.tabs__arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 60px;
+	height: 60px;
+	padding: 0;
+	border: 0;
+	background-color: var(--color-accent);
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.tabs__arrow:hover {
+	background-color: #6078f1;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.tabs__arrow svg {
+	pointer-events: none;
+	fill: #fff;
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.tabs__arrow:hover svg {
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tabs__arrow--next {
+	right: 0;
+}
+
+.tabs__arrow--prev {
+	left: 0;
+}
