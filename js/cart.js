@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const printQuantity = () => {
         let length = cartProductList.querySelector('.simplebar-content').children.length;
-        console.log(length);
         cartQuantity.textContent = length;
         length > 0 ? cart.classList.add('active') : cart.classList.remove('active');
     }
