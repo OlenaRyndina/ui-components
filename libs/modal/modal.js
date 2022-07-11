@@ -35,6 +35,7 @@ class Modal {
                 	this.animation = animation ? animation : 'fade';
                 	this.speed = speed ? parseInt(speed) : '300';
                 	this.modalContainer = document.querySelector(`[data-target="${target}"]`);
+                    console.log(this.modalContainer);
                 	this.open();
                 	return;
                 };
