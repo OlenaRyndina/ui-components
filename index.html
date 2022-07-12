@@ -6,6 +6,7 @@
 	<title>shop card</title>
     <link rel="stylesheet" href="libs/modal/modal.css">
     <link rel="stylesheet" href="libs/tabs/tabs.css">
+    <link rel="stylesheet" href="libs/accordion/accordion.css">
     <link rel="stylesheet" href="libs/time-count/time-count.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="libs/slider/slider.css">
@@ -75,6 +76,72 @@
                         <span class="time-count__text">секунд</span>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="container container__accordion">
+            <div class="ex ex-1">
+                <details class="accordion">
+                    <summary class="accordion__control">
+                        <h3 class="accordion__title">Accordion 1</h3>
+                        <span class="accordion__icon"></span>
+                    </summary>
+                    <div class="accordion__content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nemo accusantium nulla, modi placeat ipsam! Animi, dignissimos incidunt exercitationem repellendus?
+                    </div>
+                </details>
+                <details class="accordion">
+                    <summary class="accordion__control">
+                        <h3 class="accordion__title">Accordion 2</h3>
+                        <span class="accordion__icon"></span>
+                    </summary>
+                    <div class="accordion__content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nemo accusantium nulla, modi placeat ipsam! Animi, dignissimos incidunt exercitationem repellendus?
+                    </div>
+                </details>
+            </div>
+            <div class="js ex ex-2">
+                <ul class="accordion__list">
+                    <li class="accordion">
+                        <button class="accordion__control" aria-expanded="false">
+                            <span class="accordion__title">Accordion 1</span>
+                            <span class="accordion__icon"></span>
+                        </button>
+                        <div class="accordion__content" aria-hidden="true">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nemo accusantium nulla, modi placeat ipsam! Animi, dignissimos incidunt exercitationem repellendus?
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <button class="accordion__control" aria-expanded="false">
+                            <span class="accordion__title">Accordion 1</span>
+                            <span class="accordion__icon"></span>
+                        </button>
+                        <div class="accordion__content" aria-hidden="true">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nemo accusantium nulla, modi placeat ipsam! Animi, dignissimos incidunt exercitationem repellendus?
+                        </div>
+                    </li>
+                </ul>                
+            </div>
+            <div class="js ex ex-3">
+                <ul class="accordion__list">
+                    <li class="accordion">
+                        <button class="accordion__control" aria-expanded="false">
+                            <span class="accordion__title">Accordion 1</span>
+                            <span class="accordion__icon"></span>
+                        </button>
+                        <div class="accordion__content" aria-hidden="true">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nemo accusantium nulla, modi placeat ipsam! Animi, dignissimos incidunt exercitationem repellendus?
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <button class="accordion__control" aria-expanded="false">
+                            <span class="accordion__title">Accordion 1</span>
+                            <span class="accordion__icon"></span>
+                        </button>
+                        <div class="accordion__content" aria-hidden="true">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nemo accusantium nulla, modi placeat ipsam! Animi, dignissimos incidunt exercitationem repellendus?
+                        </div>
+                    </li>
+                </ul>                
             </div>
         </div>
         <div class="tabs">            
@@ -663,6 +730,7 @@
     <script src="libs/nouislider.min.js"></script>
     <script src="libs/modal/modal.js"></script>
     <script src="libs/tabs/tabs.js"></script>
+    <script src="libs/accordion/accordion.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="libs/slider/slider.js"></script>
     <script src="libs/time-count/time-count.js"></script>
