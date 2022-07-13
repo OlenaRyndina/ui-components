@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="libs/modal/modal.css">
     <link rel="stylesheet" href="libs/tabs/tabs.css">
     <link rel="stylesheet" href="libs/accordion/accordion.css">
+    <link rel="stylesheet" href="libs/stepper/stepper.css">
     <link rel="stylesheet" href="libs/time-count/time-count.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="libs/slider/slider.css">
@@ -142,6 +143,34 @@
                         </div>
                     </li>
                 </ul>                
+            </div>
+        </div>
+        <div class="container">
+            <div class="stepper">
+                <label for="" class="stepper__field">
+                    <input type="text" value="1" maxlength="3" class="stepper__input">
+                    <span class="stepper__text">шт.</span>
+                </label>
+                <div class="stepper__btns">
+                    <button class="stepper__btn stepper__btn--up" aria-label="Увеличить количество">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+                            <g>
+                                <g>
+                                    <path d="M3.904-.035L-.003 3.151 1.02 5.03l2.988-2.387 2.988 2.387 1.022-1.88-3.89-3.186z"></path>
+                                </g>
+                           </g>
+                        </svg>
+                    </button>
+                    <button class="stepper__btn stepper__btn--down stepper__btn--disabled" aria-label="Уменьшить количество">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+                            <g>
+                                <g>
+                                    <path d="M3.904 5.003L-.003 1.818 1.02-.062l2.988 2.386L6.995-.063l1.022 1.88-3.89 3.186z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="tabs">            
@@ -731,6 +760,7 @@
     <script src="libs/modal/modal.js"></script>
     <script src="libs/tabs/tabs.js"></script>
     <script src="libs/accordion/accordion.js"></script>
+    <script src="libs/stepper/stepper.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="libs/slider/slider.js"></script>
     <script src="libs/time-count/time-count.js"></script>
