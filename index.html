@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="libs/stepper/stepper.css">
     <link rel="stylesheet" href="libs/time-count/time-count.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="libs/choices.min.css"/>
+    <link rel="stylesheet" href="libs/choices/choices.css"/>
     <link rel="stylesheet" href="libs/slider/slider.css">
     <link rel="stylesheet" href="libs/nouislider.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -19,8 +21,35 @@
         <div class="container">
             <nav class="header__nav nav">
                 <ul class="nav__list">
-                    <li class="nav__item">Каталог</li>
-                    <li class="nav__item">Акции</li>
+                    <li class="nav__item">
+                        <button class="nav__btn">Каталог</button>
+                        <div class="dropdown">
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Женщины</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Мужчины</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Дети</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <button class="nav__btn">Акции</button>
+                        <div class="dropdown">
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Лето</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Зима</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="nav__item">Оплата и доставка</li>
                     <li class="nav__item">Работа в компании</li>
                     <li class="nav__item">Контакты</li>
@@ -172,6 +201,10 @@
                     </button>
                 </div>
             </div>
+            <select name="sex" class="default">
+                <option value="man">Мужской</option>
+                <option value="woman">Женский</option>
+            </select>
         </div>
         <div class="tabs">            
             <ul class="tabs__list">
@@ -762,11 +795,14 @@
     <script src="libs/accordion/accordion.js"></script>
     <script src="libs/stepper/stepper.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="libs/choices.min.js"></script>
+    <script src="libs/choices/choices.js"></script>
     <script src="libs/slider/slider.js"></script>
     <script src="libs/time-count/time-count.js"></script>
     <script src="js/product.js"></script>
     <script src="js/fixed-block.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/range-slider.js"></script>    
+    <script src="js/dropdown.js"></script>
 </body>
 </html>

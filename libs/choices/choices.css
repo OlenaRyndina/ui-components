@@ -1,0 +1,29 @@
+.choices {
+	
+	width: 200px;
+}
+
+.choices__inner {
+	padding: 5px 10px;
+	border-radius: 15px;
+	background-color: #fff;
+	max-height: auto;
+}
+
+.is-open .choices__inner {
+	padding: 5px 10px;
+	border-radius: 15px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	background-color: #fff;
+	max-height: auto;
+} 
+
+.is-open .choices__list--dropdown {
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted:after {
+	display: none;
+}

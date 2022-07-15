@@ -6,6 +6,7 @@
 	width: 150px;
 	height: 50px;
 	user-select: none;
+	display: inline-block;
 }
 
 .stepper__field {
