@@ -1,0 +1,30 @@
+.map {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 500px;
+	height: 500px;
+	background-color: #f1f1f1;
+}
+
+[class*="copyrights-pane"] {
+	display: none !important;
+}
+
+/*
+grayscale
+[class*="ground-pane"] {
+	filter:  grayscale(1);
+}*/
+
+
+.balloon__address {
+	color: yellow;
+}
+
+.balloon a {
+	color: red;
+}
+
+[class*="balloon__close-button"] {
+	opacity: 0.5;
+}

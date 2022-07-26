@@ -4,6 +4,8 @@
 @import 'product.css';
 @import 'products-grid.css';
 @import 'range-slider.css';
+@import 'form.css';
+@import 'map.css';
 
 .header {
 	position: relative;
@@ -51,6 +53,118 @@
 .nav__btn--active {
 	color: var(--color-accent);
 	font-weight: 700;
+}
+
+.burger-menu {
+	overflow: hidden;
+	position: relative;
+}
+
+.subnav {
+	margin-bottom: 60px;
+	background-color: #fff;
+	box-shadow: 0px 4px 4px rgba(135, 135, 135, 0.25);
+	border-radius: 0px 0px 4px 20px;;
+}
+
+.burger {
+	margin-top: 40px;
+	margin-bottom: 50px;
+	position: relative;
+	width: 30px;
+	height: 20px;
+	display: none;
+	border: none;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.burger__line {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 2px;
+	transform: translateY(-50%);
+	background-color: #000;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.burger::before,
+.burger::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+	transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
+}
+
+.burger::before {
+	top: 0;
+}
+
+.burger::after {
+	bottom: 0;
+}
+
+.burger--active .burger__line{
+    opacity: 0;
+}
+
+.burger--active::before {
+	top: 50%;
+	transform: rotate(45deg);
+}
+
+.burger--active::after {
+	top: 50%;
+	bottom: auto;
+	transform: rotate(-45deg);
+}
+
+.stop-scroll {
+	overflow: hidden;
+}
+
+@media (max-width:  1024px) {
+	.burger {
+		display: block;
+	}
+
+	.subnav {
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 1000;
+		overflow-y: auto;
+		padding: 30px;
+		width: 60%;
+		max-width: 300px;
+		height: 100vh;
+		transform: translateX(100%);
+		transition: transform 0.6s ease-in-out;
+	}
+
+	.nav--visible {
+		transform: none;
+	}
+
+	.subnav__list {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.subnav__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 30px;
+	}
+
+	.subnav__link {
+		font-size: 20px;
+	}
 }
 
 .dropdown {
@@ -405,4 +519,17 @@
     text-align: right;
     color: var(--color-light);
     align-self: flex-end;
+}
+
+.btn-center {
+	grid-column: 2 / 4 span;
+	text-align: center;
+}
+
+.products-grid__item:nth-child(n + 7) {
+	display: none;
+}
+
+.products-grid__item.is-visible {
+	display: block;
 }

@@ -108,6 +108,61 @@
                 </div>
             </div>
         </div>
+        <div class="container container__form">
+            <h1 class="title title--main">Валидация и отправка данных на почту</h1>
+            <div class="divider"></div>
+            <form 
+                name="test"
+                action="#" 
+                class="form"
+                method="POST"
+                enctype="multipart/form-data">
+                <label class="form__label">
+                    <input 
+                        type="text" 
+                        class="input input-name"
+                        data-validate-field="name"
+                        name="Name"
+                        placeholder="Введите имя">
+                </label>
+                <label class="form__label">
+                    <input 
+                        type="mail" 
+                        class="input input-mail"
+                        data-validate-field="email"
+                        name="Email"
+                        placeholder="Введите email">
+                </label>
+                <label class="form__label">
+                    <input 
+                        type="tel" 
+                        class="input input-tel"
+                        data-validate-field="tel"
+                        name="phone"
+                        placeholder="Введите телефон">
+                </label>
+                <label class="form__label">
+                    <input 
+                        type="textarea" 
+                        class="textarea"
+                        name="message"
+                        id=""
+                        cols="30"
+                        rows="10"
+                        placeholder="Введите ваше сообщение">
+                </label>
+                <input 
+                    type="file"
+                    class="input" 
+                    name="file[]"
+                    multiple
+                    id="myfile">
+                    <button class="btn">Отправить</button>
+            </form>
+        </div>
+        <div class="container">
+            <div id="map-test" class="map"></div>
+        </div>
         <div class="container container__accordion">
             <div class="ex ex-1">
                 <details class="accordion">
@@ -205,6 +260,38 @@
                 <option value="man">Мужской</option>
                 <option value="woman">Женский</option>
             </select>
+        </div>
+        <div class="container burger-menu">
+            <nav 
+                class="nav subnav" 
+                data-nav>
+                <ul class="nav__list subnav__list">
+                    <li class="nav__item subnav__item">
+                        <a href="#" class="nav__link subnav__link">Пункт 1</a>
+                    </li>
+                    <li class="nav__item subnav__item">
+                        <a href="#" class="nav__link subnav__link">Пункт 2</a>
+                    </li>
+                    <li class="nav__item subnav__item">
+                        <a href="#" class="nav__link subnav__link">Пункт 3</a>
+                    </li>
+                    <li class="nav__item subnav__item">
+                        <a href="#" class="nav__link subnav__link">Пункт 4</a>
+                    </li>
+                    <li class="nav__item subnav__item">
+                        <a href="#" class="nav__link subnav__link">Пункт 5</a>
+                    </li>
+                    <li class="nav__item subnav__item">
+                        <a href="#" class="nav__link subnav__link">Пункт 6</a>
+                    </li>
+                </ul>
+            </nav>
+            <button 
+                class="burger" 
+                data-burger aria-label="Открыть меню" 
+                aria-expanded="false">
+                <span class="burger__line"></span>
+            </button>
         </div>
         <div class="tabs">            
             <ul class="tabs__list">
@@ -728,7 +815,131 @@
                             <button class="product__btn btn">Добавить в корзину</button>
                         </article>
                     </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/macbook.jpg" alt="Макбук">          
+                                        </div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/macbook-2.jpg" alt="Макбук"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/macbook-3.jpg" alt="Макбук"></div>
+                                    </div>
+                                </div>
+                                <ul class="product__image-pagination image-pagination" aria-hidden="true">
+                                </ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"/>
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__term">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт.</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">90 789 гр.</span>
+                                <span class="product-price__old">94 578 гр.</span>
+                            </div>
+                            <button class="product__btn btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/macbook.jpg" alt="Макбук">          
+                                        </div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/macbook-2.jpg" alt="Макбук"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/macbook-3.jpg" alt="Макбук"></div>
+                                    </div>
+                                </div>
+                                <ul class="product__image-pagination image-pagination" aria-hidden="true">
+                                </ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"/>
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__term">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт.</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">90 789 гр.</span>
+                                <span class="product-price__old">94 578 гр.</span>
+                            </div>
+                            <button class="product__btn btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/macbook.jpg" alt="Макбук">          
+                                        </div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/macbook-2.jpg" alt="Макбук"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/macbook-3.jpg" alt="Макбук"></div>
+                                    </div>
+                                </div>
+                                <ul class="product__image-pagination image-pagination" aria-hidden="true">
+                                </ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"/>
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__term">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт.</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">90 789 гр.</span>
+                                <span class="product-price__old">94 578 гр.</span>
+                            </div>
+                            <button class="product__btn btn">Добавить в корзину</button>
+                        </article>
+                    </li>
                 </ul>
+                <div class="btn-center"><button class="show-more">Показать еще</button></div>
                 <div class="height">    </div>
             </div>
         </div>        
@@ -799,10 +1010,17 @@
     <script src="libs/choices/choices.js"></script>
     <script src="libs/slider/slider.js"></script>
     <script src="libs/time-count/time-count.js"></script>
+    <script src="libs/form/inputmask.min.js"></script>
+    <script src="libs/form/just-validate.min.js"></script>
     <script src="js/product.js"></script>
     <script src="js/fixed-block.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/range-slider.js"></script>    
     <script src="js/dropdown.js"></script>
+    <script src="js/show-more.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/form.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script src="js/map.js"></script>
 </body>
 </html>
